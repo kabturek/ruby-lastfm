@@ -383,6 +383,33 @@ XML
       events[0]['tickets']['ticket']['content'].should eql("http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026")
       events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
     end
+    
+    it 'should get images' do
+      @lastfm.should_receive(:request).with('artist.getImages', {
+          :artist => 'Cher'
+        }).and_return(make_response('artist_get_images'))
+
+      images = @lastfm.artist.get_images(:artist => 'Cher')
+      images.size.should == 1
+      images[0]['url'].should == 'http://www.last.fm/music/Cher/+images/62329825'
+      images[0]['dateadded'].should == 'Sun, 1 May 2011 01:45:36'
+      images[0]['format'].should == 'png'
+      images[0]['sizes']['size'].size.should == 6
+      images[0]['sizes']['size'][0]['name'].should == 'original'
+      images[0]['sizes']['size'][0]['content'].should == 'http://userserve-ak.last.fm/serve/_/62329825/Cher.png'
+      images[0]['sizes']['size'][1]['name'].should == 'large'
+      images[0]['sizes']['size'][1]['content'].should == 'http://userserve-ak.last.fm/serve/126/62329825.png'
+      images[0]['sizes']['size'][2]['name'].should == 'largesquare'
+      images[0]['sizes']['size'][2]['content'].should == 'http://userserve-ak.last.fm/serve/126s/62329825.png'
+      images[0]['sizes']['size'][3]['name'].should == 'medium'
+      images[0]['sizes']['size'][3]['content'].should == 'http://userserve-ak.last.fm/serve/64/62329825.png'
+      images[0]['sizes']['size'][4]['name'].should == 'small'
+      images[0]['sizes']['size'][4]['content'].should == 'http://userserve-ak.last.fm/serve/34/62329825.png'
+      images[0]['sizes']['size'][5]['name'].should == 'extralarge'
+      images[0]['sizes']['size'][5]['content'].should == 'http://userserve-ak.last.fm/serve/252/62329825.png'
+      images[0]['votes']['thumbsup'].should == '71'
+      images[0]['votes']['thumbsdown'].should == '25'
+    end
   end
 
   describe '#album' do

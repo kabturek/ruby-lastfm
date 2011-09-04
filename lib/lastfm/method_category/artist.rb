@@ -10,6 +10,9 @@ class Lastfm
       regular_method :get_top_tags, [:artist], [] do |response|
         response.xml['toptags']['tag']
       end
+      regular_method :get_images, [:artist], [] do |response|
+        response.xml['images']['image']
+      end
     end
   end
 end

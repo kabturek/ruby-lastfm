@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<lfm status="ok"> 
+  <images artist="Cher" page="1" perPage="50" totalPages="1" total="1"> 
+    <image>
+      <title></title> 
+      <url>http://www.last.fm/music/Cher/+images/62329825</url> 
+      <dateadded>Sun, 1 May 2011 01:45:36</dateadded> 
+      <format>png</format> 
+      <sizes> 
+        <size name="original" width="1219" height="1625">http://userserve-ak.last.fm/serve/_/62329825/Cher.png</size> 
+        <size name="large" width="126" height="168">http://userserve-ak.last.fm/serve/126/62329825.png</size> 
+        <size name="largesquare" width="126" height="126">http://userserve-ak.last.fm/serve/126s/62329825.png</size> 
+        <size name="medium" width="64" height="85">http://userserve-ak.last.fm/serve/64/62329825.png</size> 
+        <size name="small" width="34" height="45">http://userserve-ak.last.fm/serve/34/62329825.png</size> 
+        <size name="extralarge" width="252" height="336">http://userserve-ak.last.fm/serve/252/62329825.png</size> 
+      </sizes> 
+      <votes> 
+        <thumbsup>71</thumbsup> 
+        <thumbsdown>25</thumbsdown> 
+      </votes> 
+    </image> 
+  </images>
+</lfm> 
