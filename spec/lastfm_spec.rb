@@ -410,6 +410,35 @@ XML
       images[0]['votes']['thumbsup'].should == '71'
       images[0]['votes']['thumbsdown'].should == '25'
     end
+    
+    it 'should get search result' do
+      @lastfm.should_receive(:request).with('artist.search', {
+          :artist => 'Cher'
+        }).and_return(make_response('artist_search'))
+      results = @lastfm.artist.search(:artist => 'Cher')
+      results['totalResults'].should == '438'
+      results['startIndex'].should == '0'
+      results['itemsPerPage'].should == '30'
+      results['artistmatches']['artist'].size.should == 30
+      artist = results['artistmatches']['artist'][0]
+      artist['name'].should == 'Cher'
+      artist['listeners'].should == '688338'
+      artist['mbid'].should == 'bfcc6d75-a6a5-4bc6-8282-47aec8531818'
+      artist['url'].should == 'http://www.last.fm/music/Cher'
+      artist['streamable'].should == '1'
+      artist['image'].size.should == 5
+      artist['image'][0]['size'].should == 'small'
+      artist['image'][0]['content'] == 'http://userserve-ak.last.fm/serve/34/62329825.png'
+      artist['image'][1]['size'].should == 'medium'
+      artist['image'][1]['content'] == 'http://userserve-ak.last.fm/serve/64/62329825.png'
+      artist['image'][2]['size'].should == 'large'
+      artist['image'][2]['content'] == 'http://userserve-ak.last.fm/serve/126/62329825.png'
+      artist['image'][3]['size'].should == 'extralarge'
+      artist['image'][3]['content'] == 'http://userserve-ak.last.fm/serve/252/62329825.png'
+      artist['image'][4]['size'].should == 'mega'
+      artist['image'][4]['content'] == 'http://userserve-ak.last.fm/serve/500/62329825/Cher.png'
+  
+    end
   end
 
   describe '#album' do

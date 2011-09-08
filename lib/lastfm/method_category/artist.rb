@@ -13,6 +13,9 @@ class Lastfm
       regular_method :get_images, [:artist], [] do |response|
         response.xml['images']['image']
       end
+      regular_method :search, [:artist], [] do |response|
+        response.xml['results']
+      end
     end
   end
 end
