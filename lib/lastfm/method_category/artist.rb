@@ -1,7 +1,7 @@
 class Lastfm
   module MethodCategory
     class Artist < Base
-      regular_method :get_info, [:artist], [] do |response|
+      regular_method :get_info, [:artist], [[:lang, nil], [:autocorrect, nil]] do |response|
         response.xml['artist']
       end
       regular_method :get_events, [:artist], [] do |response|
@@ -13,7 +13,7 @@ class Lastfm
       regular_method :get_images, [:artist], [] do |response|
         response.xml['images']['image']
       end
-      regular_method :search, [:artist], [] do |response|
+      regular_method :search, [:artist], [[:limit, nil], [:page, nil]] do |response|
         response.xml['results']
       end
     end
