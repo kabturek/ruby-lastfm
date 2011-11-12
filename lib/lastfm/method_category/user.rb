@@ -19,6 +19,10 @@ class Lastfm
       regular_method :get_recent_tracks, [:user], [[:limit, nil], [:page, nil], [:to, nil], [:from, nil]] do |response|
         response.xml['recenttracks']['track']
       end
+
+      regular_method :get_top_artists, [:user], [[:limit, 50], [:page, nil], [:to, nil], [:from, nil]] do |response|
+        response.xml['topartists']['artist']
+      end
     end
   end
 end

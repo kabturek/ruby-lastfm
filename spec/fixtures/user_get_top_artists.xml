@@ -1,0 +1,52 @@
+<lfm status="ok">
+  <topartists user="RJ" type="overall" page="1" perPage="4" totalPages="87" total="4326">
+    <artist rank="1">
+      <name>Dream Theater</name>
+      <playcount>1782</playcount>
+      <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
+      <url>http://www.last.fm/music/Dream+Theater</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/62393165.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/62393165.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/62393165.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/62393165.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/62393165/Dream+Theater+Dt+official+2011.jpg</image>
+    </artist>            
+    <artist rank="2">
+      <name>Dire Straits</name>
+      <playcount>1273</playcount>
+      <mbid>614e3804-7d34-41ba-857f-811bad7c2b7a</mbid>
+      <url>http://www.last.fm/music/Dire+Straits</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/135149.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/135149.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/135149.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/135149.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/135149/Dire+Straits.jpg</image>
+    </artist>            
+    <artist rank="3">
+      <name>Miles Davis</name>
+      <playcount>855</playcount>
+      <mbid>561d854a-6a28-4aa7-8c99-323e6ce46c2a</mbid>
+      <url>http://www.last.fm/music/Miles+Davis</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/58912419.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/58912419.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/58912419.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/58912419.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/58912419/Miles+Davis+MilesPNG.png</image>
+    </artist>          
+    <artist rank="4">
+      <name>Snoop Dogg</name>
+      <playcount>790</playcount>
+      <mbid>f90e8b26-9e52-4669-a5c9-e28529c47894</mbid>
+      <url>http://www.last.fm/music/Snoop+Dogg</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/33594033.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/33594033.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/33594033.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/33594033.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/33594033/Snoop+Dogg.png</image>
+    </artist>
+  </topartists>
+</lfm>

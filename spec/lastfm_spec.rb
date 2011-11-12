@@ -441,6 +441,20 @@ XML
         tracks.size.should == 2
       end
     end
+    describe '#get_top_artists' do
+      it 'should get user\'s top artists' do
+        @lastfm.should_receive(:request).with('user.getTopArtists', {
+            :user => 'test',
+            :limit => 4,
+            :page => nil,
+            :to => nil,
+            :from => nil
+          }).and_return(make_response('user_get_top_artists'))
+        artists = @lastfm.user.get_top_artists('test', 4)
+        artists[2]['name'].should eql('Miles Davis')
+        artists.size.should == 4
+      end
+    end
   end
 
   describe '#library' do
