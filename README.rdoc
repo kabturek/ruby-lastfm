@@ -23,45 +23,45 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 === Auth
 
-* {auth.getToken}[http://www.lastfm.jp/api/show?service=265]
-* {auth.getSession}[http://www.lastfm.jp/api/show?service=125]
+* {auth.getToken}[http://www.lastfm.com/api/show?service=265]
+* {auth.getSession}[http://www.lastfm.com/api/show?service=125]
 
 === Track
 
-* {track.addTags}[http://www.lastfm.jp/api/show?service=304]
-* {track.ban}[http://www.lastfm.jp/api/show?service=261]
-* {track.getCorrection}[http://www.lastfm.jp/api/show?service=447]
-* {track.getInfo}[http://www.lastfm.jp/api/show?service=356]
-* {track.getSimilar}[http://www.lastfm.jp/api/show?service=319]
-* {track.getTags}[http://www.lastfm.jp/api/show?service=320]
-* {track.getTopFans}[http://www.lastfm.jp/api/show?service=312]
-* {track.getTopTags}[http://www.lastfm.jp/api/show?service=289]
-* {track.love}[http://www.lastfm.jp/api/show?service=260]
-* {track.removeTag}[http://www.lastfm.jp/api/show?service=316]
-* {track.scrobble}[http://www.lastfm.jp/api/show?service=443]
-* {track.search}[http://www.lastfm.jp/api/show?service=286]
-* {track.share}[http://www.lastfm.jp/api/show?service=305]
-* {track.updateNowPlaying}[http://www.lastfm.jp/api/show?service=454]
+* {track.addTags}[http://www.lastfm.com/api/show?service=304]
+* {track.ban}[http://www.lastfm.com/api/show?service=261]
+* {track.getCorrection}[http://www.lastfm.com/api/show?service=447]
+* {track.getInfo}[http://www.lastfm.com/api/show?service=356]
+* {track.getSimilar}[http://www.lastfm.com/api/show?service=319]
+* {track.getTags}[http://www.lastfm.com/api/show?service=320]
+* {track.getTopFans}[http://www.lastfm.com/api/show?service=312]
+* {track.getTopTags}[http://www.lastfm.com/api/show?service=289]
+* {track.love}[http://www.lastfm.com/api/show?service=260]
+* {track.removeTag}[http://www.lastfm.com/api/show?service=316]
+* {track.scrobble}[http://www.lastfm.com/api/show?service=443]
+* {track.search}[http://www.lastfm.com/api/show?service=286]
+* {track.share}[http://www.lastfm.com/api/show?service=305]
+* {track.updateNowPlaying}[http://www.lastfm.com/api/show?service=454]
 
 === Artist
 
-* {artist.getEvents}[http://www.lastfm.jp/api/show?service=117]
+* {artist.getEvents}[http://www.lastfm.com/api/show?service=117]
 
 === User
 
-* {user.getInfo}[http://www.lastfm.jp/api/show?service=344]
-* {user.getFriends}[http://www.lastfm.jp/api/show?service=263]
-* {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
-* {user.getNeighbours}[http://www.lastfm.jp/api/show?service=264]
-* {user.getTopArtists}[http://www.lastfm.jp/api/show?service=300]
+* {user.getInfo}[http://www.lastfm.com/api/show?service=344]
+* {user.getFriends}[http://www.lastfm.com/api/show?service=263]
+* {user.getRecentTracks}[http://www.lastfm.com/api/show?service=278]
+* {user.getNeighbours}[http://www.lastfm.com/api/show?service=264]
+* {user.getTopArtists}[http://www.lastfm.com/api/show?service=300]
 
 === Geo
 
-* {geo.getEvents}[http://www.lastfm.jp/api/show?service=270]
+* {geo.getEvents}[http://www.lastfm.com/api/show?service=270]
 
 === Library
 
-* {library.getArtists}[http://www.lastfm.jp/api/show?service=322]
+* {library.getArtists}[http://www.lastfm.com/api/show?service=322]
 
 == Installation
 
