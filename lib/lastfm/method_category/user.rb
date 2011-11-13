@@ -20,8 +20,12 @@ class Lastfm
         response.xml['recenttracks']['track']
       end
 
-      regular_method :get_top_artists, [:user], [[:limit, 50], [:page, nil], [:to, nil], [:from, nil]] do |response|
+      regular_method :get_top_artists, [:user], [[:limit, 50], [:period, 'overall'], [:page, nil], [:to, nil], [:from, nil]] do |response|
         response.xml['topartists']['artist']
+      end
+
+      method_with_authentication :get_recommended_events, [], [[:limit, 50], [:page, nil]] do |response|
+        response.xml['events']['event']
       end
     end
   end

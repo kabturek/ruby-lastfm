@@ -446,6 +446,7 @@ XML
         @lastfm.should_receive(:request).with('user.getTopArtists', {
             :user => 'test',
             :limit => 4,
+            :period => 'overall',
             :page => nil,
             :to => nil,
             :from => nil
